@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Annabel &amp; Frederick · Wedding</title>
+  <meta name="description" content="Annabel Thorne weds Frederick Lyle — Wedding on Friday, 17 December 2027, Rosewood Hall, Knutsford, Cheshire. A wedding invitation by Talvoco." />
+  <meta name="theme-color" content="#f6ede6" />
+  <link rel="canonical" href="https://talvoco-wedding-b2.vercel.app/" />
+
+  <!-- link previews (WhatsApp, Facebook, iMessage, X) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Annabel &amp; Frederick" />
+  <meta property="og:url" content="https://talvoco-wedding-b2.vercel.app/" />
+  <meta property="og:title" content="Annabel &amp; Frederick · Wedding" />
+  <meta property="og:description" content="Friday, 17 December 2027 · 6:00 PM onwards · Rosewood Hall, Knutsford" />
+  <meta property="og:image" content="https://talvoco-wedding-b2.vercel.app/assets/og-image.png" />
+  <meta property="og:image:secure_url" content="https://talvoco-wedding-b2.vercel.app/assets/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:alt" content="Pearl envelope sealed with the gold FA wax seal" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Annabel &amp; Frederick · Wedding" />
+  <meta name="twitter:description" content="Friday, 17 December 2027 · 6:00 PM onwards · Rosewood Hall, Knutsford" />
+  <meta name="twitter:image" content="https://talvoco-wedding-b2.vercel.app/assets/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playball&family=Parisienne&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- icons -->
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <link rel="preload" as="image" href="assets/envelope-closed.webp" />
+  <link rel="preload" as="image" href="assets/envelope-flap.webp" />
+  <link rel="preload" as="image" href="assets/envelope-bottom.webp" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-locked">
+
+  <!-- ============ WELCOME / ENVELOPE ============ -->
+  <section id="welcome" class="welcome" aria-label="Open the invitation">
+    <div class="welcome__stage">
+      <!-- bow video: sits paused (its first 1.4 s are a still hold) while the envelope
+           opens, then unties; its last frame is the hero video's first frame -->
+      <video id="bowVideo" class="welcome__bow" src="assets/bow.mp4" poster="assets/bow-poster.jpg"
+             muted playsinline preload="auto"></video>
+      <!-- envelope on top: the flap (with the wax seal) lifts, the V-cut bottom slides down -->
+      <div class="env" aria-hidden="true">
+        <div class="env__bottom"></div>
+        <div class="env__flap"></div>
+        <div class="env__closed"></div>
+      </div>
+    </div>
+    <button id="openBtn" class="welcome__cta" type="button">Tap to open</button>
+  </section>
+
+  <main id="site">
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <video id="heroVideo" class="hero__video" src="assets/hero.mp4" poster="assets/hero-poster.jpg"
+             muted loop playsinline preload="auto"></video>
+      <div class="hero__shade"></div>
+
+      <div class="hero__top">
+        <p class="invite-lead">Together with their families</p>
+        <p class="hero__basmala">request the pleasure of your company</p>
+        <h1 class="hero__names">
+          <span class="name">Annabel</span>
+          <span class="amp">&amp;</span>
+          <span class="name">Frederick</span>
+        </h1>
+      </div>
+
+      <a href="#quote" class="scroll-cue" aria-label="Scroll down">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ QUOTE ============ -->
+    <section id="quote" class="quote">
+      <div class="quote__frame reveal-up">
+        <div class="quote__body">
+          <p class="quote__ar">Love is patient</p>
+          <p class="quote__en">“Love is kind; it beareth all things.”</p>
+          <p class="quote__text">
+            <span>Love believeth all things,</span>
+            <span>hopeth all things,</span>
+            <span>endureth all things.</span>
+          </p>
+          <p class="quote__ref">1 Corinthians 13:4–7</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SCRATCH REVEAL ============ -->
+    <section id="reveal" class="reveal">
+      <!-- the whole section is one mother-of-pearl artwork; headings and caption sit on it -->
+      <div class="scratch" id="scratch">
+        <img class="scratch__photo" src="assets/couple.jpg" alt="The bride's ringed hand held in the groom's hand" />
+        <canvas class="scratch__canvas" id="scratchCanvas" aria-label="Scratch the oval to reveal the photo"></canvas>
+        <div class="scratch__hint" id="scratchHint" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M9 11.24V7.5a2.5 2.5 0 0 1 5 0v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72a1.12 1.12 0 0 0-1.04.31l-.8.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.89-1.39z"/></svg>
+          <span>Scratch here</span>
+        </div>
+        <p class="scratch__caption" id="scratchCaption">Two hands, one promise — forever</p>
+      </div>
+    </section>
+
+    <!-- ============ COUNTDOWN ============ -->
+    <section id="countdown" class="section section--plaque">
+      <header class="section__head reveal-up">
+        <p class="eyebrow">Counting the moments</p>
+        <h2 class="script-title script-title--one">Until We Say I Do</h2>
+      </header>
+
+      <div class="plaque reveal-up">
+        <div class="plaque__inner">
+          <div class="cd"><span class="cd__num" id="cdDays">00</span><span class="cd__lbl">Days</span></div>
+          <span class="cd__sep">:</span>
+          <div class="cd"><span class="cd__num" id="cdHours">00</span><span class="cd__lbl">Hours</span></div>
+          <span class="cd__sep">:</span>
+          <div class="cd"><span class="cd__num" id="cdMins">00</span><span class="cd__lbl">Minutes</span></div>
+          <span class="cd__sep">:</span>
+          <div class="cd"><span class="cd__num" id="cdSecs">00</span><span class="cd__lbl">Seconds</span></div>
+        </div>
+      </div>
+
+      <p class="countdown__note reveal-up" id="cdNote">Friday · 17 December 2027 · 6:00 PM</p>
+      <div class="reveal-up center">
+        <a class="btn btn--ghost" id="calBtn" target="_blank" rel="noopener"
+           href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding%20of%20Annabel%20%26%20Frederick&dates=20271217T180000Z/20271217T220000Z&details=Wedding%20ceremony%20of%20Annabel%20Thorne%20with%20Frederick%20Lyle&location=Rosewood%20Hall%2C%20Rosewood%20Drive%2C%20Knutsford%2C%20Cheshire&ctz=Europe/London">
+          Save the date
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ FAMILY ============ -->
+    <section id="family" class="section section--pearl">
+      <div class="family-frame reveal-up">
+        <div class="family-frame__inner">
+          <p class="ff__hand">With the blessings of</p>
+          <p class="ff__elder">Mr &amp; Mrs Harold Thorne <span>(Grandparents)</span></p>
+          <p class="ff__amp">&amp;</p>
+          <p class="ff__elder">Mr &amp; Mrs Walter Lyle <span>(Grandparents)</span></p>
+          <p class="ff__hosts">Mr &amp; Mrs Richard Thorne</p>
+          <p class="ff__text">request the pleasure of your company at the wedding of their daughter</p>
+          <h3 class="ff__name">Annabel Thorne</h3>
+          <p class="ff__with">with</p>
+          <h3 class="ff__name">Frederick Lyle</h3>
+          <p class="ff__rel">Son of Mr &amp; Mrs Gerald Lyle</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EVENT DETAILS ============ -->
+    <section id="event" class="section section--curtain">
+      <header class="section__head reveal-up">
+        <p class="eyebrow">The celebration</p>
+        <h2 class="script-title">Event Details</h2>
+      </header>
+
+      <div class="curtain reveal-up">
+        <div class="curtain__top">
+          <p class="curtain__title">Wedding</p>
+          <p class="curtain__lead">‘Holy Matrimony’<br />to be solemnised</p>
+        </div>
+        <div class="curtain__body">
+          <p class="curtain__label">On</p>
+          <p class="curtain__day">Friday</p>
+          <p class="curtain__date">17 <i>|</i> December <i>|</i> 2027</p>
+          <p class="curtain__time">6:00 PM onwards</p>
+          <p class="curtain__label">Venue</p>
+          <p class="curtain__venue">Rosewood Hall</p>
+          <p class="curtain__addr">Rosewood Drive,<br />Knutsford, Cheshire</p>
+          <a class="reception__map curtain__map" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&amp;query=Knutsford%2C+Cheshire">Get directions <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <!-- reception -->
+      <article class="reception">
+        <h3 class="reception__title reveal-up">Reception</h3>
+        <img class="reception__lights reveal-up" src="assets/reception-lights.webp" width="1183" height="316"
+             alt="" loading="lazy" decoding="async" />
+        <div class="reception__body reveal-up">
+          <p class="curtain__label">On</p>
+          <p class="reception__day">Sunday</p>
+          <p class="reception__date">19 <i>|</i> December <i>|</i> 2027</p>
+          <p class="reception__time">6:00 PM onwards</p>
+          <p class="curtain__label">Venue</p>
+          <p class="reception__venue">The Orangery</p>
+          <p class="reception__addr">Rosewood Hall<br />Rosewood Drive,<br />Knutsford, Cheshire</p>
+          <a class="reception__map" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&amp;query=Knutsford%2C+Cheshire">Get directions <span aria-hidden="true">→</span></a>
+        </div>
+        <img class="reception__table reveal-up" src="assets/reception-table.webp" width="947" height="1171"
+             alt="" loading="lazy" decoding="async" />
+      </article>
+    </section>
+
+    <!-- ============ MAP ============ -->
+    <section id="map" class="section section--linen">
+      <header class="section__head reveal-up">
+        <p class="eyebrow">Find your way</p>
+        <h2 class="script-title">The Venues</h2>
+      </header>
+
+      <div class="map-tabs reveal-up" role="tablist">
+        <button class="map-tabs__btn is-active" type="button" data-i="0">Wedding</button>
+        <button class="map-tabs__btn" type="button" data-i="1">Reception</button>
+      </div>
+      <div class="maps" id="maps">
+        <div class="map-card reveal-up">
+          <div class="map-frame">
+            <iframe title="Map to Rosewood Hall, Knutsford" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://maps.google.com/maps?q=Knutsford%2C+Cheshire&output=embed"></iframe>
+          </div>
+          <div class="map-card__info">
+            <p class="map-card__when">Wedding · Fri 17 Dec · 6:00 PM</p>
+            <p class="map-card__name">Rosewood Hall</p>
+            <p class="map-card__addr">Rosewood Drive, Knutsford, Cheshire</p>
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Knutsford%2C+Cheshire">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="map-card reveal-up">
+          <div class="map-frame">
+            <iframe title="Map to The Orangery, Rosewood Hall, Knutsford" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://maps.google.com/maps?q=Knutsford%2C+Cheshire&output=embed"></iframe>
+          </div>
+          <div class="map-card__info">
+            <p class="map-card__when">Reception · Sun 19 Dec · 6:00 PM</p>
+            <p class="map-card__name">The Orangery</p>
+            <p class="map-card__addr">Rosewood Hall, Rosewood Drive, Knutsford, Cheshire</p>
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Knutsford%2C+Cheshire">Get Directions</a>
+          </div>
+        </div>
+      </div>
+      <div class="map-dots" aria-hidden="true"><i class="is-active"></i><i></i></div>
+    </section>
+
+    <!-- ============ RSVP ============ -->
+    <section id="rsvp" class="section rsvp-section">
+      <div class="rsvp-panel reveal-up">
+        <header class="rsvp-head">
+          <p class="eyebrow">Kindly respond</p>
+          <h2 class="script-title">RSVP</h2>
+          <p class="rsvp-head__sub">We would be honoured by your presence &amp; best wishes</p>
+        </header>
+
+        <form class="rsvp" id="rsvpForm" novalidate>
+          <label class="field">
+            <span>Your name</span>
+            <input type="text" name="name" autocomplete="name" required placeholder="Full name" />
+          </label>
+
+          <fieldset class="field field--choice">
+            <legend>Will you attend?</legend>
+            <div class="choice">
+              <label class="choice__opt"><input type="radio" name="attending" value="yes" /><span>Joyfully accept</span></label>
+              <label class="choice__opt"><input type="radio" name="attending" value="no" /><span>Regretfully decline</span></label>
+            </div>
+          </fieldset>
+
+          <label class="field" id="guestsField" hidden>
+            <span>Number of guests</span>
+            <select name="guests" required>
+              <option value="" selected disabled>Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Wishes &amp; messages <em>(optional)</em></span>
+            <textarea name="message" rows="1" placeholder="A message for the couple"></textarea>
+          </label>
+
+          <button class="rsvp__btn" type="submit">Send RSVP</button>
+          <p class="rsvp__error" id="rsvpError" role="alert"></p>
+        </form>
+
+        <div class="rsvp-thanks" id="rsvpThanks" hidden>
+          <p class="hand-title">Thank You</p>
+          <p id="rsvpThanksMsg">Your response means the world to us.</p>
+          <a class="reception__map rsvp-thanks__wa" id="rsvpWhatsApp" target="_blank" rel="noopener" href="#">Also send on WhatsApp <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img class="footer__logo" src="assets/logo-fa.png" alt="Frederick &amp; Annabel monogram" width="408" height="398" />
+      <p class="footer__names">Annabel <span>&amp;</span> Frederick</p>
+      <p class="footer__date">17 · 12 · 2027</p>
+      <p class="footer__credit">Crafted by <a href="https://talvoco.com" target="_blank" rel="noopener">Talvoco</a></p>
+      <p class="footer__credit footer__music">Music: “Peaceful Desolation” by Kevin MacLeod (incompetech.com) · CC BY 4.0</p>
+    </footer>
+  </main>
+
+  <div class="pearls" aria-hidden="true"></div>
+
+  <!-- music: the music plays from the first tap through the whole site; intro.mp3 (2–5 s of the first music) plays over it 2 s after the tap -->
+  <audio id="introMusic" src="assets/audio/intro.mp3" preload="auto"></audio>
+  <audio id="bgMusic" src="assets/audio/music.mp3" preload="auto" loop></audio>
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Pause music" aria-pressed="true" hidden>
+    <span class="music-toggle__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
